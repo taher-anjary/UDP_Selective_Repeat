@@ -27,7 +27,7 @@ where:
 Note that since this is a simulation within localhost, paclets are dropped or'lost' to mimic real networks.
 
 ## Usage- Receiver
-Open a command prompt within "/UDP Selective Repeat/Sender Side" and enter the following command
+Open a command prompt within */UDP Selective Repeat/Sender Side* and enter the following command
 ```ruby
 python receiver.py 60000 10 0 5
 ```
@@ -39,7 +39,7 @@ where:
 - **<bind_port>** is the port number onto which the local host reciver binds to.
 - **<window_size_N>** is the is the number of the number of packets in the sliding window that are expected at a time.
 - **<packet_loss_probability_p>** is the probability that a successflly recived packet will be dropped- this is to simultate a lossy network.
-- **<max_packet_delay_Dmax>** is used to randomly select a time delay between [0.Dmax] seconds to simulate a packets travelling across different distances.
+- **<max_packet_delay_Dmax>** is used to randomly select a time delay between [0, Dmax] seconds to simulate a packets travelling across different distances.
 
 ## END
 Hope you all find it useful and helpful in yor quest to understand reliable communication protocols.
